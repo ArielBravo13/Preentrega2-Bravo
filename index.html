@@ -10,16 +10,19 @@
 
     <!-- css Bootstrap -->
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-    <!-- css style -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- animation style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
-</head>
+    <!-- scss -->
+    <link rel="stylesheet" href="./sass/main.css">
+
+    <!-- metas -->
+    <meta name="keywords" content="Recitales, Eventos, Promocionar eventos, ">
+    <meta name="description" content="Con nuestra aplicación vas a poder optimizar la compra de las entradas de los próximos shows que ">
+
 <body>
 
 
@@ -38,13 +41,13 @@
                 <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="./servicios.html">Servicios</a>
+                <a class="nav-link text-light" href="./servicios.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="./servicios.html">Contacto</a>
+                <a class="nav-link text-light" href="./servicios.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#footer-nosotros">Nosotros</a>
+                <a class="nav-link text-light" href="./usuario.html"> Login</a>
               </li>
             </ul>
           </div>
@@ -61,38 +64,30 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="30000">
         <div class="container-imagen-fondo1">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption d-none d-md-block text-color">
+                <h5>Reservá tu entrada</h5>
+                <p>Conocé nuestra página y activá los beneficios.</p>
               </div>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <div class="container-imagen-fondo2">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption d-none d-md-block text-color">
+                <h5>Disfrutá de los mejores conciertos</h5>
+                <p>Buscá los próximos eventos que llegan a Argentina.</p>
               </div>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <div class="container-imagen-fondo3">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <div class="container-imagen-fondo4">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption d-none d-md-block text-color">
+                <h5>Patrociná tus eventos</h5>
+                <p>Te brindamos la mejor atención para que puedas patrocinar tu próximo evento</p>
               </div>
         </div>
       </div>
@@ -129,40 +124,48 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-3">
                 <div class="card animate__animated animate__zoomIn" id="card-evento">
-                    <img src="./assets/img/entrada.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="card-texto">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="./assets/img/img/Flyers/205fe112d4f35a655fcce351f821364c.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center" id="card-texto">
+                      <h5 class="card-title">Evento Destacado 1</h5>
+                      <h6><b class="text-decoration-underline"> Fecha</b><strong> 29 de Enero</strong></h6>
+                      <h6><b class="text-decoration-underline"> Lugar</b><strong> Estadio Velez Sarfield</strong></h6>
+                      <h6><b class="text-decoration-underline"> Precio</b><strong> $1.500</strong></h6>
                       <a href="#" class="btn btn-warning">Go somewhere</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3" id="card-invisible2">
                 <div class="card animate__animated animate__zoomIn" id="card-evento">
-                    <img src="./assets/img/entrada.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="card-texto">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="./assets/img/img/Flyers/89052827-rock-festival-plantilla-de-diseño-de-evento-de-flyer-banda-de-música-rock-de-cartel-de-vector-de-gui.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center" id="card-texto">
+                      <h5 class="card-title">Evento Destacado 2</h5>
+                      <h6><b class="text-decoration-underline"> Fecha</b><strong> 12 de Febrero</strong></h6>
+                      <h6><b class="text-decoration-underline"> Lugar</b><strong> Estadio Movistar Arena</strong></h6>
+                      <h6><b class="text-decoration-underline"> Precio</b><strong> $1.000</strong></h6>
                       <a href="#" class="btn btn-warning ">Go somewhere</a>
                     </div>
                   </div>
             </div>
             <div class="col-md-4 col-lg-3" id="card-invisible3">
                 <div class="card animate__animated animate__zoomIn" id="card-evento">
-                    <img src="./assets/img/entrada.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="card-texto">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="./assets/img/img/Flyers/descarga.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center" id="card-texto">
+                      <h5 class="card-title">Evento Destacado 3</h5>
+                      <h6><b class="text-decoration-underline"> Fecha</b><strong> 22 de Febrero</strong></h6>
+                      <h6><b class="text-decoration-underline"> Lugar</b><strong> Estadio Boca Junior</strong></h6>
+                      <h6><b class="text-decoration-underline"> Precio</b><strong> $2.500</strong></h6>
                       <a href="#" class="btn btn-warning ">Go somewhere</a>
                     </div>
                   </div>
             </div>
             <div class="col-lg-3" id="card-invisible4">
                 <div class="card animate__animated animate__zoomIn" id="card-evento">
-                    <img src="./assets/img/entrada.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="card-texto">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <img src="./assets/img/img/Flyers/banner-musica-fiesta-nocturna-plantilla-redes-sociales_17005-1357.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center" id="card-texto">
+                      <h5 class="card-title">Evento Destacado 4</h5>
+                      <h6><b class="text-decoration-underline"> Fecha</b><strong> 12 de Marzo</strong></h6>
+                      <h6><b class="text-decoration-underline"> Lugar</b><strong> Estadio River Plate</strong></h6>
+                      <h6><b class="text-decoration-underline"> Precio</b><strong> $2.000</strong></h6>
                       <a href="#" class="btn btn-warning ">Go somewhere</a>
                     </div>
                   </div>
@@ -201,8 +204,12 @@
                 </a>
             </div>
             <div class="col-sm-12 col-lg-6 m-auto texto-fest">
-                <h1>Lorem, ipsum dolor.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, rerum laudantium doloremque dolor officiis?</p>
+                <h2 class="bg-warning p-3 mb-3">Cosquín Rock</h2>
+                <h3 class="text-decoration-underline">Bandas invitadas</h3>
+                <div class="bandas-invitadas">
+                    <p class="nombres-bandas text-center fw-semibold">No te va a gustar, Ciro y los persas, Divididos, Skay y los fakires, Guasones, Rels B, LP, Trueno, Lila Downs, Conociendo Rusia, Usted Señálemelo, Catupecu Machu, Bresh, Estelares, Juanse, Turf, El mató a un policía motorizado, Juan Ingarmo, La Delio Valdez, Saramalacara, Rayos Láser, Alemán, El bordo, entre otras bandas </p>
+                </div>  
+                
                 <a href="./trabajando.html" class="btn btn-warning ">Go somewhere</a>
             </div>
         </div>
@@ -216,8 +223,12 @@
                 </a>
             </div>
             <div class="col-sm-12 col-lg-6 m-auto texto-fest">
-                <h1>Lorem, ipsum dolor.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, rerum laudantium doloremque dolor officiis?</p>
+                <h2 class="bg-warning p-3 mb-3">Lollapaloza</h2>
+                <h3 class="text-decoration-underline">Bandas invitadas</h3>
+                <div class="bandas-invitadas">
+                    <p class="nombres-bandas text-center fw-semibold"> María Becerra, Trueno, Diego Torres, Chano, Marilina Bertoldi, Usted Señalemelo, Catupecu Machu y Dante Spinetta, entre otros. Además, la grilla anuncia la actuación de artistas como Lil Nas X; Jane's Addiction, The 1975, los Djs Armin Van Buuren y Claptone, y Cigarettes After Sex, entre otras bandas </p>
+                </div>  
+                
                 <a href="./trabajando.html" class="btn btn-warning ">Go somewhere</a>
             </div>
         </div>
@@ -258,36 +269,36 @@
 
 <div class="container-fluid mb-5">
     <div class="row ">
-        <div class="col-sm-12 col-md-6 col-lg-3 card-lug">
+        <div class="col-sm-12 col-md-6 col-lg-3 card-lug card-evento1">
             <div class="texto-lugares">
-                <h1>Ver eventos en</h1>
+                <h4>Ver eventos en</h4>
             </div>
             <div class="button-lugares">
                 <p class="parrafo-button">Conocé los proximos eventos en </p>
                 <a href="#" class="btn btn-warning ">Go somewhere</a>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 card-lug" id="lugar-none">
+        <div class="col-sm-12 col-md-6 col-lg-3 card-lug card-evento2" id="lugar-none">
             <div class="texto-lugares">
-                <h1>Ver eventos en</h1>
+                <h4>Ver eventos en</h4>
             </div>
             <div class="button-lugares">
                 <p class="parrafo-button">Conocé los proximos eventos en </p>
                 <a href="#" class="btn btn-warning ">Go somewhere</a>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 card-lug" id="lugares-none">
+        <div class="col-sm-12 col-md-6 col-lg-3 card-lug card-evento3" id="lugares-none">
             <div class="texto-lugares">
-                <h1>Ver eventos en</h1>
+                <h4>Ver eventos en</h4>
             </div>
             <div class="button-lugares">
                 <p class="parrafo-button">Conocé los proximos eventos en </p>
                 <a href="#" class="btn btn-warning ">Go somewhere</a>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 card-lug" id="lugares-none">
+        <div class="col-sm-12 col-md-6 col-lg-3 card-lug card-evento4" id="lugares-none">
             <div class="texto-lugares">
-                <h1>Ver eventos en</h1>
+                <h4>Ver eventos en</h4>
             </div>
             <div class="button-lugares">
                 <p class="parrafo-button">Conocé los proximos eventos en </p>
@@ -371,7 +382,9 @@
 
 
 <div class="help-btn">
-    <div class="help-img01"></div>
+    <a href="./servicios.html">
+        <div class="help-img01"></div>
+    </a>
 </div>
 
 
@@ -388,21 +401,23 @@
     <div class="footer-textos">
         <div class="footer-txt">
             <h3>Contactanos</h3>
-            <p> Tel: 12345678</p>
-            <p>Vía Email: TuShow@sistem.com</p>
+            <p> Telefono 1155225522</p>
+            <p>E-mail TuShow@sistem.com</p>
+            <p>Ubicación Buenos Aires, Argentina</p>
         </div>
         
-        <div class="footer-txt">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <div class="footer-txt ocultar"> 
+            <p>Elegí la mejor calidad para tu evento</p>
+            <p>Patrociná tu evento con nosotros y notá la diferencia</p>
+            <p>Cada cliente corrobora que nuestra página es la mejor del país</p>
         </div>
 
         <div class="footer-txt">
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <h6>Links de acceso rápido</h6>
+            <a href="./servicios.html"><p>Contactanos</p></a>
+            <a href="./eventos-segunda.html"><p>Eventos</p></a>
+            <a href="./festivales.html"><p>Festivales</p></a>
+            <a href="./usuario.html"><p>Iniciar sesion</p></a>
         </div>
     </div>
 </footer>
