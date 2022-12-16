@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Próximos Eventos</title>
 
-    <link rel="icon" type="image/jpg" href="./assets/img/favicon.png"/>
+    <link rel="icon" type="image/jpg" href="../assets/img/favicon.png"/>
 
     <!-- css Bootstrap -->
     <!-- CSS only -->
@@ -17,7 +17,7 @@
 
 
     <!-- scss -->
-    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
 <body>
 
@@ -27,14 +27,14 @@
     
     <nav class="navbar navbar-expand-sm bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="./index.html">PRÓXIMOS SHOWS</a>
+          <a class="navbar-brand text-light" href="../index.html">PRÓXIMOS SHOWS</a>
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="./servicios.html">Services</a>
@@ -53,39 +53,74 @@
 <!-- fin navegador -->
 
 
+
 <!-- Registro -->
 
 
 <div class="container-main  animate__animated animate__fadeInDown">
     <div class="container-titulo-main">
-        <div class="container-titulo-div" id="container-titulo">
+        <div class="container-titulo-div" id="">
             <h2 class="titulo-prox">Iniciar sesión</h2>
-            <div class="eventos">Cuenta</div>
+            <div class="eventos">Logueate</div>
         </div>
     </div>
 </div>
 
 
 <div class="container my-5 bg-light p-4">
-    <div class="row">
-        <div class="form">
-            <h3>Iniciar Sesión</h3>
-            <p>Iniciá sesión con tu usuario y contraseña</p>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-            <div class="mt-3 text-start">
-                <button class="btn btn-warning">Iniciar Sesión</button>
-                <button class="btn">Olvidé mi contraseña</button>
-            </div>
-          </div>
+    <form class="row">
+        <div class="col-4">
+            <label for="NombreID">Nombre</label>
+            <input type="text" class="form-control" id="NombreID">
         </div>
-        <a class="text-end" href="./crear-usuario.html"><button class="btn btn-link">Crear cuenta</button></a>
+        <div class="col-4">
+            <label for="ApellidoID">Apellido</label>
+            <input type="text" class="form-control" id="ApellidoID">
+        </div>
+    </form>
+    <form class="row">
+      <div class="col-4">
+          <label for="NombreID">Edad</label>
+          <input type="text" class="form-control" id="NombreID">
+      </div>
+      <div class="col-4">
+          <label for="ApellidoID">Domicilio</label>
+          <input type="text" class="form-control" id="ApellidoID">
+      </div>
+  </form>
+  <form class="row">
+    <div class="col-4">
+        <label for="NombreID">Codigo postal</label>
+        <input type="text" class="form-control" id="NombreID">
     </div>
+    <div class="col-4">
+        <label for="ApellidoID">Localidad</label>
+        <input type="text" class="form-control" id="ApellidoID">
+    </div>
+</form>
+<form class="row">
+  <div class="col-4">
+      <label for="NombreID">Tipo y número de Documento</label>
+      <input type="text" class="form-control" id="NombreID">
+  </div>
+  <div class="col-4">
+      <label for="ApellidoID">Contraseña</label>
+      <input type="text" class="form-control" id="ApellidoID">
+  </div>
+</form>
+<form class="row">
+  <div class="col-4">
+      <label for="NombreID">Repetir Contraseña</label>
+      <input type="text" class="form-control" id="NombreID">
+  </div>
+  <div class="col-4">
+      <label for="ApellidoID">Indicio de contraseña</label>
+      <input type="text" class="form-control" id="ApellidoID">
+  </div>
+</form>
+
+<a href="#" class="btn btn-warning mt-5">Enviar</a>
+
 </div>
 
 
@@ -99,6 +134,8 @@
 <!--  fin Registro -->
 
     <!-- Footer -->
+
+
 
     <footer class="footer mt-5" id="footer-nosotros">
       <div class="footer-textos">
@@ -125,7 +162,6 @@
       </div>
   </footer>
   
-
 
   
 

@@ -26,10 +26,6 @@
 /* ========================================================== */
 /* slider */
 
-.d-none {
-    display: block !important;
-}
-
 .text-color {
     color: #141619;
     text-shadow: 1px 1px 0px #fff70082;
@@ -59,23 +55,18 @@
 .container {
     &-imagen-fondo1 {
         @include bg-fondo(20%);
-        background-image: url(../assets/img/img-festt.jpg);
+        background-image: url("../assets/img/img-festt.jpg");
     }
 
     &-imagen-fondo2 {
 
         @include bg-fondo(30%);
-        background-image: url(../assets/img/img-festtt.jpg);
+        background-image: url("../assets/img/img-festtt.jpg");
     }
 
     &-imagen-fondo3 {
         @include bg-fondo(50%);
-        background-image: url(../assets/img/img-festttt.jpg);
-    }
-
-    &-imagen-fondo4 {
-        @include bg-fondo(50%);
-        background-image: url(../assets/img/img-fest.jpg);
+        background-image: url("../assets/img/img-festttt.jpg");
     }
 
 }
@@ -131,7 +122,7 @@ hr {
     color: rgba(192, 192, 0, 0.842);
 }
 
-#card-texto {
+.card-texto {
     & h6 b {
         color: red;
     }
@@ -146,7 +137,7 @@ hr {
     }
 }
 
-#card-eve {
+.card-eve {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     margin: 5% 0;
     & img {
@@ -155,14 +146,14 @@ hr {
   }
 
 @media (max-width: 991px) {
-    #card-eve img {
+    .card-eve img {
         max-height: 170px;
     }
 }
 
 
 @media (max-width: 575px) {
-    #card-eve img {
+    .card-eve img {
         max-height: 300px;
     }
 }
@@ -185,7 +176,7 @@ hr {
     margin: auto;
 }
 
-#card-texto {
+.card-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,7 +202,7 @@ hr {
 
 
 @media (max-width: 767px){
-    #card-invisible2,#card-invisible3,#card-invisible4 {
+    .card-invisible2,.card-invisible3,.card-invisible4 {
         display: none;
     }
 }
@@ -251,7 +242,7 @@ hr {
    
 }
 
-#container-even {   
+.container-even {   
     display: flex;
     flex-direction: row-reverse
 }
@@ -265,7 +256,7 @@ hr {
 
 
 @media (max-width: 992px) {
-    #container-even {
+    .container-even {
         display: none   ;
     }
 
@@ -306,30 +297,30 @@ hr {
 .card-lug {
     &.card-evento1 {
         @include bg-eventos(20%);
-        background-image: url(../assets/img/img/movistar.jpg);
+        background-image: url("../assets/img/img/movistar.jpg");
         &:hover {
             background-position-y: 50%;
         }
     }
     &.card-evento2 {
         @include bg-eventos(40%);
-        background-image: url(../assets/img/img/gran-rex.jpg);
+        background-image: url("../assets/img/img/gran-rex.jpg");
         &:hover {
             background-position-y: 60%;
         }
     }
 
     &.card-evento3 {
-        @include bg-eventos(20%);
-        background-image: url(../assets/img/img/luna.jpg);
+        @include bg-eventos(50%);
+        background-image: url("../assets/img/img/concierto.jpg");
         &:hover {
-            background-position-y: 60%;
+            background-position-y: 80%;
         }
     }
     
     &.card-evento4 {
         @include bg-eventos(20%);
-        background-image: url(../assets/img/img/imagen-principal.jpg);
+        background-image: url("../assets/img/img/imagen-principal.jpg");
         &:hover {
             background-position-y: 60%;
         }
@@ -374,7 +365,7 @@ hr {
     &-propio-eve {
         min-height: 250px;
         border: 2px solid #000;
-        background-image: url(../assets/img/vender-entradas.jpg);
+        background-image: url("../assets/img/vender-entradas.jpg");
         background-size: cover;
         background-position-y: 45%;
         padding-right: 0px;
@@ -409,7 +400,7 @@ hr {
     &-patrocina {
         min-height: 250px;
         border: 2px solid #000;
-        background-image: url(../assets/img/mesaimperial-naranja-evento-catering-goyocatering-andalucia.jpg);
+        background-image: url("../assets/img/mesaimperial-naranja-evento-catering-goyocatering-andalucia.jpg");
         background-size: cover;
         background-position-y: 45%;
         padding-right: 0px;
@@ -449,13 +440,13 @@ hr {
     bottom: 17%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../assets/img/ayuda.png);
+    background-image: url("../assets/img/ayuda.png");
     transition: .3s;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0);
 
     &:hover{
-        background-image: url(../assets/img/descarga.png);
+        background-image: url("../assets/img/descarga.png");
         background-size: contain;
         border-radius: 50px;
         width: 210px;
@@ -511,7 +502,7 @@ hr {
 
 /* servicios */
 
-#img-servicios img{
+.img-servicios img{
     border-radius: 20px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -526,33 +517,33 @@ hr {
 }   
 
 @media (min-width: 992px) and (max-width: 1200px){
-    #container-servicios {
+    .container-servicios {
         display: flex;
         flex-direction: column;
     }
 
 
 
-    #img-servicios img {
+    .img-servicios img {
         width: 100%;
         max-height: 500px;
     }
 }
 
 @media (max-width: 767px) {
-    #img-servicios img {
+    .img-servicios img {
         max-width: 500px;
     }
 }
 
 @media (min-width: 537px) and (max-width: 540px){
 
-    #container-servicios {
+    .container-servicios {
         display: flex;
         flex-direction: column;
 }
         
-    #img-servicios img {
+    .img-servicios img {
         height: 300px;
     }
 }
@@ -570,7 +561,7 @@ hr {
 
 /* servicios */
 
-#form-contact {
+.form-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -589,7 +580,7 @@ hr {
 }
 
 
-#formulario-pagina {
+.formulario-pagina {
     border: 2px solid #000;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 5% 2%;
@@ -597,7 +588,7 @@ hr {
 }
 
 @media (max-width: 992px) {
-    #form-contact {
+    .form-contact {
         border-right: none;
     }
 }
@@ -617,7 +608,7 @@ hr {
         height: 65vh ;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        background-image: url(../img/CROCK.jpg);
+        background-image: url("../img/CROCK.jpg");
         background-size: auto;
         background-position-y: 30%;
         background-position-x: -55%;
@@ -669,7 +660,7 @@ hr {
     height: 55vh ;
     width: 65%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-image: url(../img/lollapaloza.jpg);
+    background-image: url("../img/lollapaloza.jpg");
     background-size: cover;
     background-position-y: 50%;
     opacity: 0.9;
@@ -684,7 +675,7 @@ hr {
     height: 55vh ;
     width: 35%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-image: url(../img/baradero.jpg);
+    background-image: url("../img/baradero.jpg");
     background-size: auto;
     background-position-x: 10%;
     background-position-y: 20%;
@@ -808,7 +799,7 @@ hr {
     width: 33%;
     /* background: #000; */
     margin: 2.5% 5%;
-    background-image: url(../img/movistar.jpg);
+    background-image: url("../img/movistar.jpg");
     background-size: cover;
     background-position-x: 50%;
     border-radius: 20px;
@@ -826,7 +817,7 @@ hr {
     width: 33%;
     /* background: #fff; */
     margin: 2.5% 5%;
-    background-image: url(../img/luna.jpg);
+    background-image: url("../img/luna.jpg");
     background-size: cover;
     background-position-x: 50%;
     border-radius: 20px;
@@ -839,7 +830,7 @@ hr {
     width: 33%;
     /* background: #000; */
     margin: 2.5% 5%;
-    background-image: url(../img/vorterix.css);
+    background-image: url("../img/vorterix.css");
     background-size: cover;
     background-position-x: 50%;
     border-radius: 20px;
@@ -857,7 +848,7 @@ hr {
     width: 55%;
     /* background: #fff; */
     margin: 2.5% 5%;
-    background-image: url(../img/gran-rex.jpg);
+    background-image: url("../img/gran-rex.jpg");
     background-size: cover;
     background-position-y: 70%;
     border-radius: 20px;
@@ -870,7 +861,7 @@ hr {
     width: 43%;
     /* background: #000; */
     margin: 2.5% 5%;
-    background-image: url(../img/opera.jpg);
+    background-image: url("../img/opera.jpg");
     background-size: cover;
     background-position-y: 55%;
     background-position-x: 25%;
@@ -892,15 +883,10 @@ hr {
 
 /* Seccion imagen lugar y eventos */
 
-.container-img-lugar {
-    margin: 0% 5%;
-}
-
 
 .container-img-lugar-uno {
-    background-image: url(../img/movistar-arena.jpg);
-    background-size: auto;
-    font-size: 6em;
+    background-image: url("../img/movistar-arena.jpg");
+    background-size: cover;
     text-align: center;
     color: #fff;    
     text-shadow: 5px 10px #000;
@@ -914,14 +900,10 @@ hr {
 
 .arena {
     opacity: .9;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
 }
-
-
-.arena-parrafo {
-    opacity: 0.9;
-}
-
-
 
 .container-titulo-div {
     display: flex;
@@ -984,7 +966,6 @@ hr {
     display: flex;
     justify-content: center;
     align-content: center ;
-    margin-top: 10%;
 }
 
 
